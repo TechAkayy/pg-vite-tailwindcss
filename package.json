@@ -10,7 +10,6 @@
   "scripts": {
     "dev": "npm-run-all --parallel watch serve",
     "serve": "vite",
-    "postcss": "postcss src/assets/css/tailwind.css -o dist/assets/css/output.css --watch",
     "watch": "NODE_ENV=development vite build --watch",
     "now": "npm run build && npm run preview",
     "lighthouse:dev": "npx unlighthouse --no-cache --site http://localhost:5173",
@@ -28,7 +27,6 @@
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",
     "@pinegrow/tailwindcss-plugin": "^3.0.18",
-    "@pinegrow/vite-plugin": "^3.0.34",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^20.5.0",
@@ -45,6 +43,5 @@
     "tailwindcss": "^3.3.1",
     "typescript": "^5.2.2",
     "vite": "^4.0.1"
-  },
-  "web-types": "web-types.json"
+  }
 }

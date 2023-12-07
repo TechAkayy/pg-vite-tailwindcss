@@ -1,13 +1,3 @@
-import { pg_background_urls } from '../../themes/pg-tailwindcss/tokens.mjs'
-// import { pg_colors } from '../../themes/pg-tailwindcss/tokens.mjs'
-import { pg_font_urls as fontUrls } from '../../themes/pg-tailwindcss/tokens.mjs'
-
-const heroImageUrl =
-  pg_background_urls['design-image-large'] || pg_background_urls['design-image']
-const safelist = ['bg-gray-400']
-
-export { heroImageUrl, safelist, fontUrls }
-
 export function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
