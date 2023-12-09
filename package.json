@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "npm-run-all --parallel watch serve",
     "serve": "vite",
-    "watch": "NODE_ENV=development vite build --watch",
+    "watch": "MPA=true NODE_ENV=development vite build  --watch",
     "now": "npm run build && npm run preview",
     "lighthouse:dev": "npx unlighthouse --no-cache --site http://localhost:5173",
     "lighthouse": "npx unlighthouse --no-cache --site https://pg-vite-tailwindcss.netlify.app",
@@ -27,6 +27,7 @@
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",
     "@pinegrow/tailwindcss-plugin": "^3.0.18",
+    "@pinegrow/vite-plugin": "^3.0.35-beta.7",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^20.5.0",

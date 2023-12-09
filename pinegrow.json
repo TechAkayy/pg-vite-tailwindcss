@@ -3,16 +3,21 @@
     "index.html": {
       "frameworks": [
         "pg-vite-tailwindcss",
-        "pg.svg.lib",
         "pg.tw.lib",
         "pg.asset.manager",
         "pg.project.items",
         "pg.code-validator",
         "pg.image.overlay",
+        "@pinegrow/vite-plugin",
+        "project",
         "pg.css.grid",
         "pg.ia",
+        "vite",
         "pg.ia.lib",
+        "app_designer",
+        "pg.vue.tree.painter",
         "pg.insight.events",
+        "pg.ai.lib",
         "tw",
         "pg.html",
         "pg.components"
@@ -40,13 +45,31 @@
         "pg.html",
         "pg.components"
       ]
+    },
+    "pages/blog.html": {
+      "frameworks": [
+        "pg-vite-tailwindcss",
+        "pg.svg.lib",
+        "pg.asset.manager",
+        "pg.project.items",
+        "pg.code-validator",
+        "pg.ia.lib",
+        "pg.image.overlay",
+        "pg.ia",
+        "pg.tw.lib",
+        "pg.insight.events",
+        "pg.css.grid",
+        "tw",
+        "pg.html",
+        "pg.components"
+      ]
     }
   },
-  "open-pages": ["index.html"],
+  "open-pages": [],
   "urls": {
     "index.html": {
       "open-with-wrapper": false,
-      "open-page-views": [{ "w": 1024, "h": 0 }]
+      "open-page-views": [{ "w": 480, "h": 0 }]
     },
     "src/pages/home.html": {
       "open-with-wrapper": false,
@@ -57,21 +80,25 @@
     "home.html": {
       "open-with-wrapper": false,
       "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "pages/blog.html": {
+      "open-with-wrapper": false,
+      "open-page-views": [{ "w": 480, "h": 0 }]
     }
   },
   "breakpoints": ["640px", "768px", "1024px", "1280px", "1536px"],
   "frameworks": [
     "pg-vite-tailwindcss",
     "pg.svg.lib",
-    "pg.tw.lib",
     "pg.asset.manager",
     "pg.project.items",
     "pg.code-validator",
-    "pg.image.overlay",
-    "pg.css.grid",
-    "pg.ia",
     "pg.ia.lib",
+    "pg.image.overlay",
+    "pg.ia",
+    "pg.tw.lib",
     "pg.insight.events",
+    "pg.css.grid",
     "tw",
     "pg.html",
     "pg.components"
