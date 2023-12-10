@@ -12,6 +12,7 @@ export default defineConfig({
     liveDesigner({
       dirs: {
         src: './src',
+        pages: './pages',
       },
       pagesWithEntries: [
         {
