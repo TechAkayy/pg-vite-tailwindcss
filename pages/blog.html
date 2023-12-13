@@ -177,7 +177,7 @@
                   />
                   <div id="result" class="py-4">
                     <ul class="space-y-6">
-                      <template x-for="result in results">
+                      <template x-for="(result, index) in results" :key="index">
                         <li>
                           <a
                             x-bind:href="result.data.url"
