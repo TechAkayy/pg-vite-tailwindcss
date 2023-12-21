@@ -4,7 +4,7 @@ export default {
   logo: 'i-vscode-icons:file-type-coffeelint',
   author: 'Pinegrow',
   url: 'https://pg-vite-tailwindcss.netlify.app',
-  github: 'https://github.com/pinegrow/pg-vite-tailwindcss',
+  github: 'https://github.com/techakayy/pg-vite-tailwindcss',
   defaultLocale: 'en', // default
   identity: {
     type: 'Organization',

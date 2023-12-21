@@ -5,7 +5,7 @@
   "homepage": "https://pg-vite-tailwindcss.netlify.app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pinegrow/pg-vite-tailwindcss.git"
+    "url": "https://github.com/techakayy/pg-vite-tailwindcss.git"
   },
   "scripts": {
     "dev": "npm-run-all --parallel watch watch-wp serve",
