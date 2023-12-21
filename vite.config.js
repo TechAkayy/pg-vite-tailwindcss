@@ -14,6 +14,13 @@ export default defineConfig({
         src: './src',
         pages: './pages',
       },
+      output: {
+        cssDir: './css', // Relative to outDir (default is 'dist')
+        cssFilename: 'style.css',
+        cssWpFilename: 'style.wp.css',
+        jsDir: './js', // Relative to outDir (default is 'dist')
+        imgDir: './images', // Relative to outDir (default is 'dist')
+      },
       pagesWithEntries: [
         {
           page: './index.html',
