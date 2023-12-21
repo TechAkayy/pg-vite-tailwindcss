@@ -2,25 +2,28 @@
 
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
-import { liveDesigner } from '@pinegrow/vite-plugin'
+import vitePluginPg from './vite-plugin-pg.js'
 
 // import { visualizer } from 'rollup-plugin-visualizer'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    liveDesigner({
+    vitePluginPg({
       dirs: {
         src: './src',
         pages: './pages',
       },
       output: {
-        cssDir: './css', // Relative to outDir (default is 'dist')
-        cssFilename: 'style.css',
-        cssWpFilename: 'style.wp.css',
+        outDir: 'tailwind_theme', // default is 'dist'
+        cssDir: './', // could be './css', relative to outDir (default is 'dist')
+        cssFilename: 'tailwind.css',
+        cssWpFilename: 'tailwind_for_wp_editor.css',
         jsDir: './js', // Relative to outDir (default is 'dist')
         imgDir: './images', // Relative to outDir (default is 'dist')
       },
+      // lib: process.env.LIB, // passed via package.json script commands
+      // wp: process.env.WP, // passed via package.json script commands
       pagesWithEntries: [
         {
           page: './index.html',
@@ -32,10 +35,11 @@ export default defineConfig({
         },
       ],
     }),
-    //...
   ],
 
   build: {
+    minify: false,
+    cssMinify: false,
     // Vite uses Rollup under the hold, so rollup options & plugins can be used for advanced usage
     rollupOptions: {
       plugins: [
@@ -43,6 +47,7 @@ export default defineConfig({
       ],
     },
   },
+
   resolve: {
     alias: {
       /* Must be either an object, or an array of { find, replacement, customResolver } pairs. */
