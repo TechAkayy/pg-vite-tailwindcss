@@ -34,6 +34,8 @@ coverage
 # Pinegrow
 _pgbackup
 _pginfo
+_pgexport
+tailwind_theme
 
 ## optional
 # pinegrow.json

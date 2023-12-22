@@ -5,20 +5,21 @@
   "homepage": "https://pg-vite-tailwindcss.netlify.app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pinegrow/pg-vite-tailwindcss.git"
+    "url": "https://github.com/techakayy/pg-vite-tailwindcss.git"
   },
   "scripts": {
-    "dev": "npm-run-all --parallel watch serve",
+    "dev": "npm-run-all --parallel watch watch-wp serve",
     "serve": "vite",
-    "watch": "cross-env MPA=true NODE_ENV=development vite build  --watch",
+    "watch": "cross-env LIB=true NODE_ENV=development vite build  --watch",
+    "watch-wp": "cross-env LIB=true WP=true NODE_ENV=development vite build  --watch",
     "now": "npm run build && npm run preview",
     "lighthouse:dev": "npx unlighthouse --no-cache --site http://localhost:5173",
     "lighthouse": "npx unlighthouse --no-cache --site https://pg-vite-tailwindcss.netlify.app",
     "build": "vite build",
-    "preview": "vite preview",
+    "preview": "vite preview --outDir=tailwind_theme",
     "lint": "npm run lint:fix && npm run format",
     "lint:fix": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write . '!public'"
+    "format": "prettier --write . !public"
   },
   "dependencies": {
     "alpinejs": "^3.13.3",
@@ -26,8 +27,6 @@
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",
-    "@pinegrow/tailwindcss-plugin": "^3.0.18",
-    "@pinegrow/vite-plugin": "^3.0.35-beta.7",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^20.5.0",
