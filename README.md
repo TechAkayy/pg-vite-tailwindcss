@@ -4,7 +4,7 @@ This vite-powered external build process outputs both `tailwind.css` and `tailwi
 
 While the `tailwind.css` build includes Tailwind preflight, `tailwind_for_wp_editor.css` omits the preflight styles since they do not integrate well with WordPress blocks.
 
-A custom Vite plugin, `vite-plugin-pg.js`, serves this purpose and utilizes environment variables (`LIB` and `WP`) passed from the package.json script commands (`watch` and `watch-wp`). The `WP` environment variable is also employed in `tailwind.config.js` to conditionally enable or disable Tailwind preflight.
+A custom Vite plugin, `vite-plugin-pg.js`, serves this purpose and utilizes environment variables (`LIB` and `WP`) passed from the package.json script commands (`watch` and `watch-wp`). The `WP` environment variable is then used in `tailwind.config.js` to conditionally enable or disable Tailwind preflight.
 
 The external build process is node-based, so it only works with the Pinegrow Desktop app. It provides users the advantage of customizing the Tailwind config to any extent, using Tailwind plugins, and employing @apply directives, among other features.
 
