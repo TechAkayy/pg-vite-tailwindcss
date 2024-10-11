@@ -2,20 +2,20 @@
 
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
-import vitePluginPg from './vite-plugin-pg.js'
+import VitePluginPg from './vite-plugin-pg.js'
 
 // import { visualizer } from 'rollup-plugin-visualizer'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vitePluginPg({
+    VitePluginPg({
       dirs: {
         src: './src',
         pages: './pages',
       },
       output: {
-        outDir: 'tailwind_theme', // default is 'dist'
+        // outDir: 'tailwind_theme', // default is 'dist'
         cssDir: './', // could be './css', relative to outDir (default is 'dist')
         cssFilename: 'tailwind.css',
         cssWpFilename: 'tailwind_for_wp_editor.css',

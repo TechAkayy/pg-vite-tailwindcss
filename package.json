@@ -1,7 +1,7 @@
 {
   "name": "pg-vite-tailwindcss",
-  "version": "0.0.0",
-  "description": "Pinegrow external build with tailwindcss plugin",
+  "version": "1.0.0",
+  "description": "Pinegrow external build with Vite and Pinegrow Tailwindcss plugin",
   "homepage": "https://pg-vite-tailwindcss.netlify.app",
   "repository": {
     "type": "git",
@@ -13,36 +13,36 @@
     "watch": "cross-env LIB=true NODE_ENV=development vite build  --watch",
     "watch-wp": "cross-env LIB=true WP=true NODE_ENV=development vite build  --watch",
     "now": "npm run build && npm run preview",
-    "lighthouse:dev": "npx unlighthouse --no-cache --site http://localhost:5173",
     "lighthouse": "npx unlighthouse --no-cache --site https://pg-vite-tailwindcss.netlify.app",
     "build": "vite build",
-    "preview": "vite preview --outDir=tailwind_theme",
+    "preview": "vite preview --outDir=dist",
     "lint": "npm run lint:fix && npm run format",
     "lint:fix": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write . !public"
   },
   "dependencies": {
-    "alpinejs": "^3.13.3",
-    "iconify-icon": "^1.0.8"
+    "alpinejs": "^3.14.1",
+    "iconify-icon": "^2.1.0"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^0.1.1",
-    "@tailwindcss/forms": "^0.5.3",
-    "@tailwindcss/typography": "^0.5.9",
-    "@types/node": "^20.5.0",
-    "autoprefixer": "^10.4.14",
+    "@nuxt/eslint-config": "^0.5.7",
+    "@pinegrow/tailwindcss-plugin": "^3.0.32",
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.15",
+    "@types/node": "^22.7.5",
+    "autoprefixer": "^10.4.20",
     "cross-env": "^7.0.3",
-    "daisyui": "^2.43.2",
-    "eslint": "^8.36.0",
-    "eslint-config-prettier": "^8.7.0",
+    "daisyui": "^4.12.13",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
     "npm-run-all": "^4.1.5",
-    "ofetch": "^1.3.3",
-    "postcss": "^8.4.22",
-    "postcss-cli": "^10.1.0",
-    "prettier": "^2.8.4",
-    "rollup-plugin-visualizer": "^5.8.3",
-    "tailwindcss": "^3.3.1",
-    "typescript": "^5.2.2",
-    "vite": "^4.0.1"
+    "ofetch": "^1.4.1",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "prettier": "^3.3.3",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.8"
   }
 }

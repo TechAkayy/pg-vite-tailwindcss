@@ -42,6 +42,17 @@
 
 /* Pinegrow generated Design Panel Extra Rules Begin */
 
+/* Class styles components */
+@layer components {
+  h1 {
+    @apply font-bold mb-4 text-5xl sm:text-6xl lg:text-7xl;
+  }
+
+  h2 {
+    @apply flex font-bold font-serif items-center mb-4 text-4xl;
+  }
+}
+
 h1,
 h2,
 h3,

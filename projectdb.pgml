@@ -18,8 +18,11 @@
             </dmdesignskill>
             <dmdesignskill skill="fonts" family_2="&quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif" family_1="Lato" h1_2="h1" h2_2="h2" h3_2="h3" h4_2="h4" h5_2="h5" h6_2="h6" h1_1 h2_1 h4_1 h3_1 h5_1 h6_1></dmdesignskill>
             <dmdesignskill skill="background" image_for_colors image="https://images.unsplash.com/photo-1607478900766-efe13248b125?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDE4OXx8ZnVybml0dXJlfGVufDB8fHx8MTYyNzMzMDA1MA&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=2000&fit=max" selector=".poster"></dmdesignskill>
-            <dmdesignskill skill="tailwind"></dmdesignskill>
+            <dmdesignskill skill="tailwind" disable.preflight="1"></dmdesignskill>
         </dmdesign>
     </dmdesigns>
     <dmlocked tw-colors-gray="true" tw-colors-red="true" tw-colors-yellow="true" tw-colors-green="true" tw-colors-blue="true" tw-colors-indigo="true" tw-colors-purple="true" tw-colors-pink="true" background-image="false" fonts-family_1="false" fonts-family_2="false"></dmlocked>
+    <classstyles>
+        <classstyle name="h1" key="h1" class="font-bold mb-4 text-5xl sm:text-6xl lg:text-7xl" expanded component states="lg xl" count="2"></classstyle>
+    </classstyles>
 </project>
