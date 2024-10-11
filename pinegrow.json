@@ -5,13 +5,15 @@
     "pg-vite-tailwindcss",
     "pg.tree.painter",
     "pg.insight.events",
+    "pg.ia.lib",
+    "pg.ia",
     "pg.tw.lib",
-    "pg.svg.lib",
     "pg.css.grid",
     "pg.image.overlay",
     "pg.code-validator",
     "pg.project.items",
     "pg.asset.manager",
+    "tw.flowbite",
     "tw",
     "pg.html",
     "pg.components"
@@ -30,7 +32,8 @@
     "add_setting": null,
     "custom_source_url": null,
     "disable_preflight": null,
-    "external_config_url": "tailwind.config.js"
+    "external_config_url": "tailwind.config.js",
+    "ignore_skill_preflight_setting": "1"
   },
   "class-styles-components": "1",
   "automatic-tailwindcss-builder": false
