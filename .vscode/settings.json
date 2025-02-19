@@ -6,6 +6,8 @@
   },
   "eslint.validate": ["javascript", "javascriptreact", "vue"],
   "typescript.tsdk": "node_modules/typescript/lib",
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
   "search.exclude": {
     "**/_pgbackup": true,
     "dist": true,

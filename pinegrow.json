@@ -1,21 +1,31 @@
 {
-  "open-pages": ["index.html"],
-  "breakpoints": ["640px", "768px", "1024px", "1280px", "1536px"],
+  "open-pages": [
+    "index.html"
+  ],
+  "breakpoints": [
+    "640px",
+    "768px",
+    "1024px",
+    "1280px",
+    "1536px"
+  ],
   "frameworks": [
     "pg-vite-tailwindcss",
     "pg.tree.painter",
-    "pg.insight.events",
-    "pg.ia.lib",
-    "pg.ia",
     "pg.tw.lib",
-    "pg.css.grid",
-    "pg.image.overlay",
-    "pg.code-validator",
-    "pg.project.items",
+    "pg.ia.lib",
     "pg.asset.manager",
+    "pg.svg.lib",
+    "pg.insight.events",
+    "pg.project.items",
+    "pg.code-validator",
+    "pg.image.overlay",
+    "pg.css.grid",
+    "pg.ia",
     "tw.flowbite",
     "tw",
     "pg.html",
+    "pine.cone.lib",
     "pg.components"
   ],
   "tw-use-external-build": "1",
@@ -36,5 +46,42 @@
     "ignore_skill_preflight_setting": "1"
   },
   "class-styles-components": "1",
-  "automatic-tailwindcss-builder": false
+  "automatic-tailwindcss-builder": false,
+  "urls": {
+    "index.html": {
+      "open-with-wrapper": false,
+      "open-page-views": [
+        {
+          "w": 1024,
+          "h": 0
+        }
+      ]
+    }
+  },
+  "files": {
+    "index.html": {
+      "frameworks": [
+        "pg-vite-tailwindcss",
+        "pg.tree.painter",
+        "pg.tw.lib",
+        "pg.ia.lib",
+        "pg.asset.manager",
+        "pg.svg.lib",
+        "pg.insight.events",
+        "pg.project.items",
+        "pg.code-validator",
+        "pg.image.overlay",
+        "pg.css.grid",
+        "pg.ia",
+        "tw.flowbite",
+        "tw",
+        "pg.html",
+        "pine.cone.lib",
+        "pg.components"
+      ]
+    }
+  },
+  "use-shortform-for-prop-binder": false,
+  "auto-reload-on-update": false,
+  "prefer_islands": true
 }
